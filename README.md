@@ -17,7 +17,7 @@ Para simular la difusión de calor, como ya fue mencionado, partimos de un algor
 
 En nuestro enfoque de paralelización, dividimos la matriz en 2 y 4 secciones tanto horizontal como verticalmente, es decir, en columnas y filas. Las implementaciones de estas paralelizaciones se encuentran en los archivos de `diffusionParallel 2H.c`, `diffusionParallel 2V.c`, `diffusionParallel 4V.c` y `diffusionParallel 4H.c`. También desarrollamos una estrategia que emplea cuatro threads y divide la matriz simultáneamente por filas y columnas en `diffusionParallel 4Box.c`.
 
-En el archivo `common.c` se encuentran las implementaciones de las funciones para configurar las condiciones iniciales y de contorno del sistema, así como para realizar la difusión. Los archivos `resultado*.pdf` muestran visualizaciones de las difusiones de calor realizadas con y sin threads. Estas visualizaciones fueron generadas con la librería matplotlib.
+En el archivo `common.c` se encuentran las implementaciones de las funciones para configurar las condiciones iniciales y de contorno del sistema, así como para realizar la difusión. Los archivos `resultado*.pdf` muestran visualizaciones de las difusiones de calor realizadas con y sin threads. Estas visualizaciones fueron generadas con la librería matplotlib, en el archivo plot.py se encuentra toda la implementación.
 
 ## Tabla de Tiempos y Análisis de Eficiencia
 
